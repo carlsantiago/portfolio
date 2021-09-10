@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  background: #11324d;
+}
+
+nav {
+  font-family: "Poppins", sans-serif;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #6b7aa1;
+  z-index: 99;
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+  height: 3em;
+  min-width: 20rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links .animated {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+
+  font-weight: bold;
+  background: linear-gradient(to right, #ccc, #e2d7d7 50%, #eb8039);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+.animated:hover {
+  background-position: -100%;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+.main-header {
+  background-image: url(../images/bg.jpg);
+}
+#head {
+  padding-top: 5%;
+}
+
+#intro,
+.container {
+  width: 40em;
+  text-align: justify;
+  border-style: dotted;
+  margin: 3rem auto 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Slab", sans-serif;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  margin: 1rem 0 0 0;
+}
+
+#photo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.5;
+}
+
+#intro {
+  text-align: center;
+}
