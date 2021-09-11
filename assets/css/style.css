@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
-  vertical-align: baseline;
 }
 
 body {
@@ -21,7 +20,7 @@ nav {
   position: fixed;
   background-color: #6b7aa1;
   z-index: 99;
-  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 40%), 0 4px 10px 0 rgb(0 0 0 / 40%);
   height: 3em;
   min-width: 20rem;
   text-align: center;
@@ -34,13 +33,17 @@ nav {
   display: inline-block;
   font-size: 18px;
   text-decoration: none;
-
   font-weight: bold;
-  background: linear-gradient(to right, #ccc, #e2d7d7 50%, #eb8039);
+  background: linear-gradient(
+    to left,
+    rgb(15, 15, 15),
+    #000000 50%,
+    #ffffff 1%
+  );
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .animated:hover {
@@ -57,27 +60,40 @@ nav ul li {
   padding: 0 20px;
 }
 
-.main-header {
-  background-image: url(../images/bg.jpg);
-}
-#head {
-  padding-top: 5%;
+.header {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  height: 25rem;
+  margin-top: 3rem;
+  flex-direction: column;
+  width: 100%;
 }
 
-#intro,
-.container {
-  width: 40em;
-  text-align: justify;
-  border-style: dotted;
-  margin: 3rem auto 0 auto;
+.header h1,
+.header h2 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h1 {
+  padding-bottom: 20px;
+}
+
+.header h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  letter-spacing: normal;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: "Josefin Slab", sans-serif;
   display: block;
   text-align: center;
@@ -86,17 +102,54 @@ h6 {
   margin: 1rem 0 0 0;
 }
 
-#photo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
 }
 
-p {
-  margin: 1em 0;
-  line-height: 1.5;
+.container #intro-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 60%;
+  padding: 50px 0;
+  line-height: 30px;
 }
 
-#intro {
-  text-align: center;
+.container .projects {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  border-style: dotted;
+  max-width: 65%;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.projects img {
+  margin: 1px 4px;
+}
+
+.projects a img {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  border-style: solid;
+  border-color: red;
+  border-width: 3px;
+  background-color: yellow;
+  z-index: 99;
 }
