@@ -13,9 +13,9 @@
     <nav>
       <ul class="nav-links">
         <li><a href="#" class="animated"> Home</a></li>
-        <li><a href="#category-about" class="animated">About</a></li>
-        <li><a href="#category-projects" class="animated">Projects</a></li>
-        <li><a href="#" class="animated">Contact</a></li>
+        <li><a href="#project" class="animated">Projects</a></li>
+        <li><a href="#aboutme" class="animated">About</a></li>
+        <li><a href="#contactme" class="animated">Contact</a></li>
       </ul>
     </nav>
     <div class="header">
@@ -27,62 +27,91 @@
     </div>
 
     <div class="container">
-      <img src="assets/images/avatar.png" alt="avatar" />
+      <img src="assets/images/avatar.png" alt="avatar" id="avatar" />
       <div id="intro-text">
-        <p>
+        <p class="phar">
           Voluptate sunt elit fugiat velit amet aute magna elit magna Lorem. Ad
           consequat eu reprehenderit officia ad anim ex nisi magna. Eiusmod
-          veniam ea pariatur irure labore aute excepteur fugiat nisi. Tempor
-          ipsum ad sit aute commodo irure. Nisi duis reprehenderit ipsum
-          cupidatat velit laboris quis cupidatat ipsum cupidatat.
+          veniam ea pariatur irure labore aute excepteur fugiat nisi.
         </p>
       </div>
-      <div>
-        <header class="category-header">
-          <h1>Projects</h1>
-        </header>
+      <div class="category-header" id="project">
+        <h1>Projects</h1>
       </div>
+
       <div class="projects">
-        <a title="Test" href="#"
-          ><img id="first-project" src="./assets/images/project.jpg" />
-          <div class="img-overlay">AAAAAA</div>
-        </a>
-        <a title="Test" href="#"
-          ><img class="other-project" src="./assets/images/project2.jpg" />
+        <a title="Test" href="#" id="project1">
           <div class="img-overlay">
-            <h3>AAAAAA</h3>
-            Desc
+            <div>
+              <h3>First Homework</h3>
+              <p>Code Refactor</p>
+            </div>
           </div>
         </a>
-        <a title="Test" href="#"
-          ><img class="other-project" src="./assets/images/project3.jpg" />
-          <div class="img-overlay">AAAAAA</div>
+        <a title="Test" href="#" id="project2">
+          <div class="img-overlay">
+            <h3>Second Homework</h3>
+            <p>Portfolio</p>
+          </div>
         </a>
-
-        <a title="Test" href="#"
-          ><img class="other-project" src="./assets/images/project4.jpg" />
-          <div class="img-overlay">AAAAAA</div>
-        </a>
-
-        <a title="Test" href="#"
-          ><img class="other-project" src="./assets/images/project5.jpg" />
-          <div class="img-overlay">AAAAAA</div>
+        <a title="Test" href="#" id="project3">
+          <div class="img-overlay">
+            <h3>OMEGALUL</h3>
+            <p>WAWAWAWA</p>
+          </div> </a
+        ><a title="Test" href="#" id="project4">
+          <div class="img-overlay">
+            <h3>OMEGALUL</h3>
+            <p>WAWAWAWA</p>
+          </div> </a
+        ><a title="Test" href="#" id="project5">
+          <div class="img-overlay">
+            <h3>OMEGALUL</h3>
+            <p>WAWAWAWA</p>
+          </div>
         </a>
       </div>
-      <section id="category-about">
-        <header class="category-header">
-          <h1>About</h1>
-        </header>
+
+      <div class="category-header" id="aboutme">
+        <h1>About</h1>
+      </div>
+      <div class="about">
         <img src="assets/images/avatarfull.png" alt="avatar" />
-        <p>
+        <p class="phar">
           Labore quis ullamco occaecat mollit aute nulla sint veniam culpa
           pariatur excepteur esse. Laborum culpa exercitation amet veniam
-          excepteur dolore cillum sit veniam voluptate ut. Laborum officia culpa
-          deserunt ullamco veniam. Magna laboris adipisicing sint quis Lorem
-          nisi ipsum voluptate eu enim. Velit nostrud esse minim veniam laborum
-          quis sint cillum do.
+          excepteur dolore cillum sit veniam voluptate ut. <br /><br />
+          Laborum officia culpa deserunt ullamco veniam. Magna laboris
+          adipisicing sint quis Lorem nisi ipsum voluptate eu enim. Velit
+          nostrud esse minim veniam laborum quis sint cillum do.
         </p>
-      </section>
+      </div>
+
+      <div class="category-header" id="contactme">
+        <h1>Feedback</h1>
+      </div>
+      <div class="contact">
+        <form>
+          <input
+            name="name"
+            type="text"
+            class="feedback-input"
+            placeholder="Name"
+          />
+          <input
+            name="email"
+            type="text"
+            class="feedback-input"
+            placeholder="Email"
+          />
+          <textarea
+            name="text"
+            class="feedback-input"
+            placeholder="Comment"
+          ></textarea>
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
     </div>
     <footer></footer>
   </body>

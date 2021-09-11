@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 * {
   box-sizing: border-box;
@@ -82,7 +83,12 @@ nav ul li {
 }
 
 .header h1 {
+  font-family: "Josefin Slab", sans-serif;
   padding-bottom: 20px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
 }
 
 .header h2 {
@@ -95,13 +101,23 @@ nav ul li {
 h1,
 h2 {
   font-family: "Josefin Slab", sans-serif;
-  display: block;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
-  margin: 1rem 0 0 0;
+  letter-spacing: 0.1em;
 }
 
+h3 {
+  font-size: 22px;
+}
+
+.img-overlay p {
+  font-size: 18px;
+}
+#avatar {
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #113552;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -119,37 +135,141 @@ h2 {
   text-align: justify;
   max-width: 60%;
   padding: 50px 0;
-  line-height: 30px;
+  color: #c1cfc0;
+  margin-bottom: 200px;
 }
 
 .container .projects {
   display: flex;
   position: relative;
   flex-flow: row wrap;
-  border-style: dotted;
   max-width: 65%;
   margin-top: 30px;
+  height: auto;
   justify-content: center;
 }
 
-.projects img {
-  margin: 1px 4px;
-}
-
-.projects a img {
+.projects a {
   border-style: solid;
-  border-width: 3px;
-  border-color: black;
-  position: relative;
+  border-width: 4px;
+  border-color: #001c31;
+  height: 180px;
+  width: 360px;
+  margin: 2px;
+  text-decoration: none;
+  justify-content: center;
 }
 
 .img-overlay {
-  position: absolute;
   font-size: 24px;
-  color: black;
-  border-style: solid;
-  border-color: red;
+  color: #33251f;
+  border-style: none;
+  border-color: #11324d;
   border-width: 3px;
-  background-color: yellow;
+  background-color: #c1cfc0;
+  width: 200px;
+  text-align: justify;
   z-index: 99;
+  padding-left: 8px;
+}
+
+#project1 {
+  background-image: url(../images/project.jpg);
+  height: 270px;
+  width: 720px;
+}
+
+#project2 {
+  background-image: url(../images/project2.jpg);
+}
+
+#project3 {
+  background-image: url(../images/project3.jpg);
+}
+
+#project4 {
+  background-image: url(../images/project4.jpg);
+}
+
+#project5 {
+  background-image: url(../images/project5.jpg);
+}
+
+.projects {
+  margin-bottom: 200px;
+}
+.category-header {
+  border-top: 8px solid #c1cfc0;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 60%;
+  padding: 50px 0;
+  line-height: 30px;
+  color: #c1cfc0;
+  justify-content: center;
+  align-items: center;
+}
+
+.phar {
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin-bottom: 200px;
+}
+
+.about img {
+  margin-bottom: 30px;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #6b7aa1;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #6b7aa1;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #6b7aa1;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #6b7aa1;
 }
