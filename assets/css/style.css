@@ -1,20 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 100%;
 }
 
 body {
   background: #11324d;
+  font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Josefin Slab", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* Start Navbar */
 nav {
-  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   left: 0;
   top: 0;
   width: 100%;
@@ -30,10 +46,22 @@ nav {
   justify-content: space-around;
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+/* To animate navbar when hover */
+
 .nav-links .animated {
   display: inline-block;
   font-size: 18px;
-  text-decoration: none;
   font-weight: bold;
   background: linear-gradient(
     to left,
@@ -50,18 +78,10 @@ nav {
 .animated:hover {
   background-position: -100%;
 }
-.nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-nav ul li {
-  padding: 0 20px;
-}
+/* START OF HEADER */
 
-.header {
+header {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -74,15 +94,15 @@ nav ul li {
   width: 100%;
 }
 
-.header h1,
-.header h2 {
+header h1,
+header h2 {
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header h1 {
+header h1 {
   font-family: "Josefin Slab", sans-serif;
   padding-bottom: 20px;
   display: block;
@@ -91,27 +111,15 @@ nav ul li {
   letter-spacing: 0.125em;
 }
 
-.header h2 {
+header h2 {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: bolder;
   letter-spacing: normal;
 }
 
-h1,
-h2 {
-  font-family: "Josefin Slab", sans-serif;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
+/* START OF MAIN CONTAINER */
 
-h3 {
-  font-size: 22px;
-}
-
-.img-overlay p {
-  font-size: 18px;
-}
 #avatar {
   border-radius: 100%;
   border-style: solid;
@@ -126,12 +134,9 @@ h3 {
   width: 1200px;
   padding: 50px 0;
   margin: 0 auto;
-  position: relative;
 }
 
 .container #intro-text {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
   text-align: justify;
   max-width: 60%;
   padding: 50px 0;
@@ -156,7 +161,6 @@ h3 {
   height: 180px;
   width: 360px;
   margin: 2px;
-  text-decoration: none;
   justify-content: center;
 }
 
@@ -172,7 +176,9 @@ h3 {
   z-index: 99;
   padding-left: 8px;
 }
-
+.img-overlay p {
+  font-size: 18px;
+}
 #project1 {
   background-image: url(../images/project.jpg);
   height: 270px;
@@ -202,12 +208,12 @@ h3 {
   border-top: 8px solid #c1cfc0;
   border-radius: 5px;
   width: 400px;
+  color: #c1cfc0;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  font-family: Georgia, "Times New Roman", Times, serif;
   max-width: 60%;
   padding: 50px 0;
   line-height: 30px;
@@ -227,6 +233,8 @@ h3 {
 .about img {
   margin-bottom: 30px;
 }
+
+/* CONTACT FORM */
 
 .feedback-input {
   color: white;
@@ -272,4 +280,33 @@ textarea {
 }
 [type="submit"]:hover {
   background: #6b7aa1;
+}
+
+.contact {
+  margin-bottom: 150px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1cfc0;
+  width: 100vw;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  padding-right: 5px;
+}
+
+footer .social a {
+  font-size: 18px;
+  padding: 3px;
 }
