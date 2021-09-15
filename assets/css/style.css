@@ -1,11 +1,7 @@
+/* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-
-:root {
-  --primary: ;
-  --secondary: #11324d;
-}
 
 /* reset */
 
@@ -21,7 +17,7 @@ li {
 }
 
 body {
-  background-color: var(--secondary);
+  background-color: #11324d;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -42,7 +38,7 @@ h3 {
   font-size: 1.4em;
 }
 
-/* Start Navbar */
+/* Navbar */
 nav {
   font-weight: 300;
   left: 0;
@@ -93,7 +89,7 @@ nav ul li {
   background-position: -100%;
 }
 
-/* START OF HEADER */
+/* HEADER */
 
 header {
   background-image: url("../images/bg.jpg");
@@ -112,13 +108,13 @@ header h1,
 header h2 {
   margin-left: auto;
   margin-right: auto;
+  text-transform: uppercase;
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 3em;
   display: block;
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 0.125em;
 }
 
@@ -128,7 +124,7 @@ header h2 {
   letter-spacing: normal;
 }
 
-/* START OF MAIN CONTAINER */
+/* MAIN CONTAINER */
 
 #avatar {
   border-radius: 100%;
@@ -146,10 +142,14 @@ header h2 {
 }
 
 .container #intro-text {
-  text-align: justify;
+  text-align: center;
   max-width: 85%;
   padding: 50px 0;
   color: #c1cfc0;
+  margin-bottom: 200px;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  line-height: 40px;
   margin-bottom: 200px;
 }
 
@@ -158,26 +158,27 @@ header h2 {
   flex-flow: row wrap;
   margin-top: 30px;
   justify-content: center;
-  max-width: 95vw;
-  width: 100vw;
 }
 
 .projects a {
   border-style: solid;
   border-width: 4px;
-  border-color: #001c31;
+  border-color: #000000;
   height: 180px;
   width: 360px;
   margin: 2px;
   max-height: 200px;
+  background-size: 360px 270px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .img-overlay {
   font-size: 1em;
-  color: #33251f;
+  color: #000000;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
-  background-color: #c1cfc0;
+  background-color: #e9f1f3;
   width: fit-content;
   z-index: 99;
   padding: 4px 8px;
@@ -189,11 +190,9 @@ header h2 {
 
 #project1 {
   background-image: url(../images/project.jpg);
-  background-size: 100% 100%;
+  background-size: 360px 270px;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 270px;
-  width: 720px;
 }
 
 #project2 {
@@ -218,7 +217,6 @@ header h2 {
 .category-header {
   border-top: 8px solid #c1cfc0;
   border-radius: 5px;
-  width: 80vw;
   color: #c1cfc0;
   text-align: center;
 }
@@ -326,47 +324,55 @@ footer .social a {
 }
 
 /* tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 380px) {
   body {
     font-size: 18px;
   }
-  #project1 {
-    width: 720px;
-  }
 }
 
-/* large tablets & laptop */
-@media screen and (min-width: 960px) {
+/* tablet */
+@media screen and (min-width: 768px) {
   body {
     font-size: 20px;
   }
-  header h1 {
-    font-size: 50px;
+
+  /* tablet */
+  @media screen and (min-width: 1024px) {
+    body {
+      font-size: 22px;
+    }
+
+    .container {
+      width: 80vw;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    #project1 {
+      background-size: 720px 270px;
+      width: 720px;
+    }
   }
 
-  .container {
-    max-width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+  /* tablet */
+  @media screen and (min-width: 1830px) {
+    body {
+      font-size: 22px;
+    }
 
-/* desktop */
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
-  .container {
-    width: 50%;
-  }
-  .container .category-header {
-    width: 50%;
-  }
-  .container .projects {
-    width: 100%;
-  }
+    header {
+      background-size: 100vw 50vh;
+      height: 50vh;
+    }
 
-  .contact {
-    width: 80%;
+    .container {
+      width: 50vw;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .contact {
+      width: 40vw;
+    }
   }
 }
