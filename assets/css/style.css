@@ -148,8 +148,8 @@ header h2 {
   color: #c1cfc0;
   margin-bottom: 200px;
   font-size: 1.25em;
-  letter-spacing: 3px;
-  line-height: 40px;
+  letter-spacing: 2px;
+  line-height: 35px;
   margin-bottom: 200px;
 }
 
@@ -172,6 +172,8 @@ header h2 {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+/* I've put background images to my anchor tags so I have the title for my links*/
 
 .img-overlay {
   font-size: 1em;
@@ -214,6 +216,8 @@ header h2 {
 .projects {
   margin-bottom: 200px;
 }
+
+/* Divider for every section */
 .category-header {
   border-top: 8px solid #c1cfc0;
   border-radius: 5px;
@@ -234,7 +238,7 @@ header h2 {
 
 .phar {
   font-size: 1.25em;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
   line-height: 40px;
   margin-bottom: 200px;
@@ -323,46 +327,27 @@ footer .social a {
   padding: 3px;
 }
 
-/* tablet */
-@media screen and (min-width: 380px) {
+/* Small devices */
+@media screen and (min-width: 370px) {
   body {
     font-size: 18px;
   }
 }
 
-/* tablet */
+/* Medium Devices */
 @media screen and (min-width: 768px) {
   body {
     font-size: 20px;
   }
+  #project1 {
+    background-size: 520px 270px;
+    width: 520px;
+  }
 
-  /* tablet */
+  /* Large devices */
   @media screen and (min-width: 1024px) {
     body {
       font-size: 22px;
-    }
-
-    .container {
-      width: 80vw;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    #project1 {
-      background-size: 720px 270px;
-      width: 720px;
-    }
-  }
-
-  /* tablet */
-  @media screen and (min-width: 1830px) {
-    body {
-      font-size: 22px;
-    }
-
-    header {
-      background-size: 100vw 50vh;
-      height: 50vh;
     }
 
     .container {
@@ -371,8 +356,42 @@ footer .social a {
       margin-left: auto;
     }
 
+    .container .projects {
+      width: 100vw;
+    }
+
+    #project1 {
+      background-size: 720px 270px;
+      width: 720px;
+    }
+
+    header {
+      background-size: 100vw 50vh;
+      height: 50vh;
+    }
+
     .contact {
       width: 40vw;
+    }
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1456px) {
+    .container {
+      width: 40vw;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .container #intro-text {
+      text-align: justify;
+    }
+
+    .phar {
+      text-align: justify;
+    }
+    .container .projects {
+      width: 50vw;
     }
   }
 }

@@ -10,28 +10,30 @@ Our second homework for this bootcamp. This is to showcase what I've learnt in t
 - To present some sample of my previous works.
 - To present my name, photo or avatar, and links to sections of my page.
 - To make the links clickable and working properly.
-- To have my first sample of work's image larger than the others.
+- To have my first work's image larger than the others.
 - To have my page responsive.
 
-## Screenshots of sections of my portfolio
+## Screenshots viewed from different devices
 
-### Header
+### Iphone X
 
-![Header](./assets/images/screenshots/header.png)
+![Iphone X](./assets/images/screenshots/IphoneX.gif)
 
-### Projects Samples
+---
 
-![Projects](./assets/images/screenshots/projects.png)
+### Ipad
 
-### About me
+![Ipad](./assets/images/screenshots/Ipad.gif)
 
-![About](./assets/images/screenshots/aboutme.png)
+---
 
-### Contact and Footer
+### Ipad Pro
 
-![Contact and Footer](./assets/images/screenshots/contactandfooter.png)
+![Ipad Pro](./assets/images/screenshots/IpadPro.gif)
 
-## You can view the final product here
+---
+
+### You can view the final product here
 
 https://carlsantiago.github.io/portfolio/
 
