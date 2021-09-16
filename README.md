@@ -2,7 +2,7 @@
 
 ## Professional Portfolio
 
-Our second homework for this bootcamp. This is to showcase what I've learnt in the first two week of the bootcamp.
+Our second homework for the coding bootcamp. This is to showcase what I've learnt in the first two weeks of the bootcamp.
 
 ## That tasks include
 
