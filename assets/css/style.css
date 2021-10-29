@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+/* .cardImg {
+  height: 200px !important;
+  width: 500px !important;
+} */
 /* Fonts */
 
 #name,
@@ -39,7 +43,14 @@ h3 {
 }
 
 /* Navbar */
-nav {
+#nav-container {
+  padding-right: 4rem;
+}
+
+.navBtn {
+  color: white;
+}
+/* nav {
   font-weight: 300;
   left: 0;
   top: 0;
@@ -54,22 +65,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
-.nav-links {
+/* .nav-links {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-}
+} */
 
-nav ul li {
+/* nav ul li {
   padding: 0 20px;
-}
+} */
 
 /* To animate navbar when hover */
 
-.nav-links .animated {
+/* .nav-links .animated {
   display: inline-block;
   font-size: 1em;
   font-weight: bold;
@@ -87,7 +98,7 @@ nav ul li {
 
 .animated:hover {
   background-position: -100%;
-}
+} */
 
 /* HEADER */
 
@@ -100,7 +111,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 0 0 0;
+  /* margin: 3rem 0 0 0; */
   height: 30vh;
 }
 
@@ -137,7 +148,7 @@ header h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 80vw;
   padding: 50px 0;
 }
 
@@ -146,11 +157,10 @@ header h2 {
   max-width: 85%;
   padding: 50px 0;
   color: #c1cfc0;
-  margin-bottom: 200px;
+
   font-size: 1.25em;
   letter-spacing: 2px;
   line-height: 35px;
-  margin-bottom: 200px;
 }
 
 .container .projects {
@@ -160,7 +170,7 @@ header h2 {
   justify-content: center;
 }
 
-.projects a {
+/* .projects a {
   border-style: solid;
   border-width: 4px;
   border-color: #000000;
@@ -171,7 +181,7 @@ header h2 {
   background-size: 360px 270px;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} */
 
 /* I've put background images to my anchor tags so I have the title for my links*/
 
@@ -186,18 +196,18 @@ header h2 {
   padding: 4px 8px;
 }
 
-.img-overlay p {
+/* .img-overlay p {
   font-size: 1em;
-}
+} */
 
-#project1 {
-  background-image: url(../images/project.jpg);
+/* #project1 {
+  background-image: url(../images/daymaker.png);
   background-size: 360px 270px;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} */
 
-#project2 {
+/* #project2 {
   background-image: url(../images/project2.jpg);
 }
 
@@ -215,7 +225,7 @@ header h2 {
 
 .projects {
   margin-bottom: 200px;
-}
+} */
 
 /* Divider for every section */
 .category-header {
@@ -223,13 +233,13 @@ header h2 {
   border-radius: 5px;
   color: #c1cfc0;
   text-align: center;
+  margin-top: 200px;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   max-width: 85%;
-  padding: 50px 0;
   line-height: 30px;
   color: #c1cfc0;
   justify-content: center;
@@ -241,7 +251,6 @@ header h2 {
   text-align: center;
   letter-spacing: 1px;
   line-height: 40px;
-  margin-bottom: 200px;
 }
 
 .about img {
@@ -250,9 +259,6 @@ header h2 {
 
 /* CONTACT FORM */
 
-.contact {
-  width: 95vw;
-}
 .feedback-input {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
@@ -301,7 +307,7 @@ textarea {
 
 .contact {
   margin-bottom: 150px;
-  width: 80vw;
+  width: 40vw;
 }
 
 /* FOOTER */
@@ -328,24 +334,24 @@ footer .social a {
 }
 
 /* Small devices */
-@media screen and (min-width: 370px) {
+/* @media screen and (min-width: 370px) {
   body {
     font-size: 18px;
   }
-}
+} */
 
 /* Medium Devices */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   body {
     font-size: 20px;
   }
   #project1 {
     background-size: 520px 270px;
     width: 520px;
-  }
+  } */
 
-  /* Large devices */
-  @media screen and (min-width: 1024px) {
+/* Large devices */
+/* @media screen and (min-width: 1024px) {
     body {
       font-size: 22px;
     }
@@ -373,10 +379,10 @@ footer .social a {
     .contact {
       width: 40vw;
     }
-  }
+  } */
 
-  /* Desktop */
-  @media screen and (min-width: 1456px) {
+/* Desktop */
+/* @media screen and (min-width: 1456px) {
     .container {
       width: 40vw;
       margin-right: auto;
@@ -394,4 +400,4 @@ footer .social a {
       width: 50vw;
     }
   }
-}
+} */
