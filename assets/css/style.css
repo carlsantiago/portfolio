@@ -90,6 +90,10 @@ header h2 {
   background-position: center center;
   height: 100vh;
 }
+
+.cardDesc {
+  height: 200px;
+}
 .container {
   display: flex;
   flex-direction: column;
