@@ -1,5 +1,5 @@
 /* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
@@ -12,30 +12,24 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
 li {
   list-style-type: none;
 }
 
 body {
-  background-color: #11324d;
+  position: relative;
+  background-color: #0f131e;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-}
-
-/* .cardImg {
-  height: 200px !important;
-  width: 500px !important;
-} */
-/* Fonts */
-
-#name,
-h3 {
-  font-family: "Josefin Slab", sans-serif;
-}
-h1,
-h2,
-h3 {
-  letter-spacing: 0.1em;
 }
 
 h3 {
@@ -43,113 +37,67 @@ h3 {
 }
 
 /* Navbar */
-#nav-container {
-  padding-right: 4rem;
-}
 
 .navBtn {
   color: white;
 }
-/* nav {
-  font-weight: 300;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  position: fixed;
-  background-color: #6b7aa1;
-  z-index: 99;
-  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 40%), 0 4px 10px 0 rgb(0 0 0 / 40%);
-  height: 3em;
-  min-width: 20rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
-
-/* .nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} */
-
-/* nav ul li {
-  padding: 0 20px;
-} */
-
-/* To animate navbar when hover */
-
-/* .nav-links .animated {
-  display: inline-block;
-  font-size: 1em;
-  font-weight: bold;
-  background: linear-gradient(
-    to left,
-    rgb(15, 15, 15),
-    #000000 50%,
-    #ffffff 1%
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: 0.1s ease-out;
-}
-
-.animated:hover {
-  background-position: -100%;
-} */
 
 /* HEADER */
 
 header {
-  background-image: url("../images/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* margin: 3rem 0 0 0; */
-  height: 30vh;
 }
 
-header h1,
-header h2 {
-  margin-left: auto;
-  margin-right: auto;
-  text-transform: uppercase;
-}
-
-header h1 {
-  font-size: 3em;
-  display: block;
+#name {
+  font-size: 4em;
   text-align: center;
   letter-spacing: 0.125em;
+  color: white;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
+  margin-bottom: 30px;
 }
 
 header h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-size: 0.8em;
   letter-spacing: normal;
 }
 
 /* MAIN CONTAINER */
 
 #avatar {
-  border-radius: 100%;
+  max-width: 15%;
+  border-radius: 50%;
   border-style: solid;
-  border-width: 5px;
-  border-color: #113552;
+  border-width: 3px;
+  border-color: #161a26;
+}
+
+#section1 {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 0vw;
   padding: 50px 0;
+  width: 60vw;
 }
 
 .container #intro-text {
@@ -169,63 +117,6 @@ header h2 {
   margin-top: 30px;
   justify-content: center;
 }
-
-/* .projects a {
-  border-style: solid;
-  border-width: 4px;
-  border-color: #000000;
-  height: 180px;
-  width: 360px;
-  margin: 2px;
-  max-height: 200px;
-  background-size: 360px 270px;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-
-/* I've put background images to my anchor tags so I have the title for my links*/
-
-.img-overlay {
-  font-size: 1em;
-  color: #000000;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-  background-color: #e9f1f3;
-  width: fit-content;
-  z-index: 99;
-  padding: 4px 8px;
-}
-
-/* .img-overlay p {
-  font-size: 1em;
-} */
-
-/* #project1 {
-  background-image: url(../images/daymaker.png);
-  background-size: 360px 270px;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-
-/* #project2 {
-  background-image: url(../images/project2.jpg);
-}
-
-#project3 {
-  background-image: url(../images/project3.jpg);
-}
-
-#project4 {
-  background-image: url(../images/project4.jpg);
-}
-
-#project5 {
-  background-image: url(../images/project5.jpg);
-}
-
-.projects {
-  margin-bottom: 200px;
-} */
 
 /* Divider for every section */
 .category-header {
@@ -334,21 +225,26 @@ footer .social a {
 }
 
 /* Small devices */
-/* @media screen and (min-width: 370px) {
+@media screen and (max-width: 376px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
-} */
+  #name {
+    font-size: 3em;
+  }
+
+  #navbarSupportedContent {
+    display: flex !important;
+    justify-content: start !important;
+  }
+}
 
 /* Medium Devices */
-/* @media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
-    font-size: 20px;
+    font-size: 14px;
   }
-  #project1 {
-    background-size: 520px 270px;
-    width: 520px;
-  } */
+}
 
 /* Large devices */
 /* @media screen and (min-width: 1024px) {
