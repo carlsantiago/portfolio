@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+body {
+  background-image: url("/images/bg.svg") !important;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: table-cell;
+}
+
+#brand {
+  font-family: "Comforter";
+  font-size: 30px;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+#avatar {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(50%) contrast(120%);
+  box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.cardDesc {
+  height: 200px;
+}
+
+.container p {
+  width: 32em;
+  line-height: 2em;
+  padding-left: 3em;
+  font-family: "Jura", sans-serif;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -5px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.menu {
+  width: 20vw;
+}
+
+.projectCard {
+  width: 300px;
+}
+
+.skillCard {
+  width: 300px;
+}
+
+.skillContainer {
+  width: 70vw;
+  padding-top: 10rem;
+}
+
+.projectContainer {
+  width: 80vw;
+  padding-top: 10rem;
+}
+
+.contactContainer {
+  width: 80vw;
+  padding-top: 20rem;
+}

@@ -1,0 +1,17 @@
+<div class="col d-flex align-items-baseline justify-content-around">
+    <div class="card border-white bg-transparent text-center skillCard">
+        <div class="card-body text-white">
+            <h5 class="card-title">{{name}}</h5>
+            <ul class="list-group list-group-flush">
+        {{#each skill }}
+            <li class="list-group-item">
+                {{name}}
+                {{#unless learned}}
+                <span class="badge bg-primary rounded-pill">Learning</span>
+                {{/unless}}
+            </li>
+            {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

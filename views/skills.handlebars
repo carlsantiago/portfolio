@@ -1,0 +1,42 @@
+{{> brand}}
+
+<div class="
+        d-flex
+        container-fluid
+        skillContainer">
+            <div class="card border-white bg-transparent text-center border-dark skillCard">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Browser Based Technologies</h5>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">Jquery
+                        <span class="badge bg-primary rounded-pill">Learning</span>
+                    </li>
+                    <li class="list-group-item">Responsive Design
+                        <span class="badge bg-primary rounded-pill">Learning</span>
+                    </li>
+                    <li class="list-group-item">Bootstrap</li>
+                    <li class="list-group-item">Handlebars</li>
+                    <li class="list-group-item">Local Storage</li>
+                    <li class="list-group-item">Session Storage</li>
+                    <li class="list-group-item">IndexedDB
+                            <span class="badge bg-primary rounded-pill">Learning</span>
+                    </li>
+                    <li class="list-group-item">React.js
+                        <span class="badge bg-primary rounded-pill">Learning</span>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+    <div class="row container-fluid" >
+        {{#each skills as |skill|}}
+        {{> skill-details}}
+        {{/each}}
+    </div>
+
+</div>
+
+{{> buttons }}

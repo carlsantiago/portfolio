@@ -1,0 +1,16 @@
+{{> brand}}
+
+<div class="
+        d-flex
+        justify-content-center
+        align-items-center
+        flex-column
+        container-fluid
+        projectContainer">
+    <div class="row justify-content-center align-items-center">
+        {{#each projects as |project|}}
+        {{> project-details}}
+        {{/each}}
+    </div>
+</div>
+{{> buttons }}
